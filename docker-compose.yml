@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  eshopwebmvc:
+    image: alexyeshopacr.azurecr.io/eshopwebmvc
+    build:
+      context: .
+      dockerfile: src/Web/Dockerfile
+  eshoppublicapi:
+    image: alexyeshopacr.azurecr.io/eshoppublicapi
+    build:
+      context: .
+      dockerfile: src/PublicApi/Dockerfile
+
